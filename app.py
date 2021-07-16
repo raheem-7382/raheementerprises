@@ -123,5 +123,9 @@ def pull_necks():
 def marvins():
     return render_template("marvins.html")
 
+@app.route('/bathings')
+def bathings():
+    return render_template("bathings.html")
+
 if __name__ == '__main__':
     app.run()
