@@ -46,7 +46,7 @@ def login():
                 session["logged_in"] = True
                 session["name"] = user.name
                 session["id"] = user.id
-                return redirect(url_for("dashboard"))
+                return redirect(url_for("products_dash"))
             else:
                 flash("Wrong email or password")
         except User.DoesNotExist:
@@ -126,6 +126,19 @@ def marvins():
 @app.route('/bathings')
 def bathings():
     return render_template("bathings.html")
+
+@app.route('/products_dash')
+def products_dash():
+    return render_template("products_dash.html")
+
+@app.route('/clothings')
+def clothings():
+    return render_template("clothings.html")
+
+
+@app.route('/skirts')
+def skirts():
+    return render_template("skirts.html")
 
 if __name__ == '__main__':
     app.run()
