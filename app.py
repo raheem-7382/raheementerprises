@@ -140,5 +140,17 @@ def clothings():
 def skirts():
     return render_template("skirts.html")
 
+@app.route('/shirts')
+def shirts():
+    return render_template("tshirts.html")
+
+@app.route('/trousers')
+def trousers():
+    return render_template("trousers.html")
+
+@app.route('/dresses')
+def dresses():
+    return render_template("dresses.html")
+
 if __name__ == '__main__':
     app.run()
