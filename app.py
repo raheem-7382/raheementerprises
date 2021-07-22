@@ -152,5 +152,37 @@ def trousers():
 def dresses():
     return render_template("dresses.html")
 
+@app.route('/feedings')
+def feedings():
+    return render_template("feedings.html")
+
+@app.route('/diapers')
+def diapers():
+    return render_template("diapers.html")
+
+@app.route('/equipments')
+def equipments():
+    return render_template("equipments.html")
+
+@app.route('/wipes')
+def wipes():
+    return render_template("wipes.html")
+
+@app.route('/care')
+def care():
+    return render_template("care.html")
+
+@app.route('/formula')
+def formula():
+    return render_template("formula.html")
+
+@app.route('/tubs')
+def tubs():
+    return render_template("tubs.html")
+
+@app.route('/seats')
+def seats():
+    return render_template("potty_seat.html")
+
 if __name__ == '__main__':
     app.run()
