@@ -184,5 +184,25 @@ def tubs():
 def seats():
     return render_template("potty_seat.html")
 
+@app.route('/thermo')
+def thermo():
+    return render_template("thermo.html")
+
+@app.route('/hammocks')
+def hammocks():
+    return render_template("hammocks.html")
+
+@app.route('/b_seats')
+def b_seats():
+    return render_template("b_seats.html")
+
+@app.route('/tidies')
+def tidies():
+    return render_template("tidies.html")
+
+@app.route('/touch')
+def touch():
+    return render_template("touch.html")
+
 if __name__ == '__main__':
     app.run()
