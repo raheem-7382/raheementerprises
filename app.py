@@ -204,5 +204,17 @@ def tidies():
 def touch():
     return render_template("touch.html")
 
+@app.route('/bags')
+def bags():
+    return render_template("bags.html")
+
+@app.route('/mats')
+def mats():
+    return render_template("mats.html")
+
+@app.route('/toys')
+def toys():
+    return render_template("toys.html")
+
 if __name__ == '__main__':
     app.run()
