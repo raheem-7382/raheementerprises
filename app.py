@@ -216,5 +216,21 @@ def mats():
 def toys():
     return render_template("toys.html")
 
+@app.route('/feeds')
+def feeds():
+    return render_template("feedings.html")
+
+@app.route('/bibs')
+def bibs():
+    return render_template("bibs.html")
+
+@app.route('/bottles')
+def bottles():
+    return render_template("bottles.html")
+
+@app.route('/soothers')
+def soothers():
+    return render_template("soothers.html")
+
 if __name__ == '__main__':
     app.run()
