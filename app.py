@@ -232,5 +232,21 @@ def bottles():
 def soothers():
     return render_template("soothers.html")
 
+@app.route('/chairs')
+def chairs():
+    return render_template("chairs.html")
+
+@app.route('/h_chairs')
+def h_chairs():
+    return render_template("seats.html")
+
+@app.route('/pampers')
+def pampers():
+    return render_template("pampers.html")
+
+@app.route('/huggies')
+def huggies():
+    return render_template("huggies.html")
+
 if __name__ == '__main__':
     app.run()
