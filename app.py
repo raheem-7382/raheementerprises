@@ -162,7 +162,7 @@ def diapers():
 
 @app.route('/equipments')
 def equipments():
-    return render_template("equipments.html")
+    return render_template("p_equipments.html")
 
 @app.route('/wipes')
 def wipes():
@@ -247,6 +247,38 @@ def pampers():
 @app.route('/huggies')
 def huggies():
     return render_template("huggies.html")
+
+@app.route('/angels')
+def angels():
+    return render_template("little_angels.html")
+
+@app.route('/rascal')
+def rascal():
+    return render_template("rascal.html")
+
+@app.route('/fred')
+def fred():
+    return render_template("fred.html")
+
+@app.route('/p_mats')
+def p_mats():
+    return render_template("p_mats.html")
+
+@app.route('/gym')
+def gym():
+    return render_template("gym.html")
+
+@app.route('/btoys')
+def btoys():
+    return render_template("btoys.html")
+
+@app.route('/walkers')
+def walkers():
+    return render_template("walkers.html")
+
+@app.route('/ptoys')
+def ptoys():
+    return render_template("ptoys.html")
 
 if __name__ == '__main__':
     app.run()
