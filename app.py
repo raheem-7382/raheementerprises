@@ -280,5 +280,51 @@ def walkers():
 def ptoys():
     return render_template("ptoys.html")
 
+@app.route('/aveeno')
+def aveeno():
+    return render_template("aveeno.html")
+
+@app.route('/l_angels')
+def l_angels():
+    return render_template("l_angels.html")
+
+@app.route('/w_huggies')
+def w_huggies():
+    return render_template("w_huggies.html")
+
+@app.route('/w_pampers')
+def w_pampers():
+    return render_template("w_pampers.html")
+
+@app.route('/water')
+def water():
+    return render_template("water.html")
+
+@app.route('/aveeno_c')
+def aveeno_c():
+    return render_template("aveeno_c.html")
+
+@app.route('/dove')
+def dove():
+    return render_template("dove.html")
+
+@app.route('/infa')
+def infa():
+    return render_template("infa.html")
+
+@app.route('/e45')
+def e45():
+    return render_template("e45.html")
+
+@app.route('/jj')
+def jj():
+    return render_template("jj.html")
+
+@app.route('/cocoa')
+def cocoa():
+    return render_template("cocoa.html")
+
+
+
 if __name__ == '__main__':
     app.run()
