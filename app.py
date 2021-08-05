@@ -324,7 +324,29 @@ def jj():
 def cocoa():
     return render_template("cocoa.html")
 
+@app.route('/aptamil')
+def aptamil():
+    return render_template("aptamil.html")
 
+@app.route('/sma')
+def sma():
+    return render_template("sma.html")
+
+@app.route('/cow')
+def cow():
+    return render_template("cow.html")
+
+@app.route('/kenda')
+def kenda():
+    return render_template("kenda.html")
+
+@app.route('/hipp')
+def hipp():
+    return render_template("hipp.html")
+
+@app.route('/mammy')
+def mammy():
+    return render_template("mammy.html")
 
 if __name__ == '__main__':
     app.run()
